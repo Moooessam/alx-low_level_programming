@@ -9,18 +9,19 @@
 
 int main(void)
 {
-	int n;
+	int n, digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	digit = n % 10;
 
-	printf("Last digit of %i is %i and is ", n, (n % 10));
+	printf("Last digit of %i is %i and is ", n, (digital));
 
-	if ((n % 10) == 0)
+	if ((digital) == 0)
 	{
 		printf("0\n");
 	}
-	else if ((n % 10) > 5)
+	else if ((digital) > 5)
 	{
 		printf("greater than 5\n");
 	}
